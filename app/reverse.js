@@ -1,3 +1,7 @@
 module.exports = function(arr) {
-  return arr.reverse();
+  var reversedArr = [];
+  while(arr.length > 0) {
+    reversedArr.push(arr.pop());
+  }
+  return reversedArr;
 };
