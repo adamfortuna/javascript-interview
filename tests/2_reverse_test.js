@@ -15,11 +15,11 @@ describe('reverse', function() {
   });
 
   it('Make sure to export a function using `module.exports`. @reverse', function() {
-    assert.equal(typeof(reverse), "function");
+    assert.equal(typeof(reverse), "function", 'Make sure to export a function using `module.exports`. @reverse');
   });
 
   it('Your function should accept 1 argument - the array we want to reverse. @reverse', function() {
-    assert.equal(reverse.length, 1);
+    assert.equal(reverse.length, 1, 'Your function should accept 1 argument - the array we want to reverse. @reverse');
   });
 
   it("It looks like you used the native JavaScript `reverse` method. Try to solve this problem without using this one. @reverse", function() {
@@ -29,14 +29,14 @@ describe('reverse', function() {
 
     reverse(input);
 
-    assert.equal(spy.callCount, 0)
+    assert.equal(spy.callCount, 0, "It looks like you used the native JavaScript `reverse` method. Try to solve this problem without using this one. @reverse")
 
   });
 
   describe('with an empty array', function() {
     it('When passed an empty array, your function should return an empty array. @reverse', function() {
       var result = reverse([]);
-      assert.deepEqual(result, []);
+      assert.deepEqual(result, [], 'When passed an empty array, your function should return an empty array. @reverse');
     });
   });
 
@@ -45,7 +45,7 @@ describe('reverse', function() {
     it('When passed an array with one item, your function should return the same array. @reverse', function() {
       var key = Math.random();
       var result = reverse([key]);
-      assert.deepEqual(result, [key]);
+      assert.deepEqual(result, [key], 'When passed an array with one item, your function should return the same array. @reverse');
     });
   });
 
@@ -56,7 +56,7 @@ describe('reverse', function() {
     it('Your function is modifying the passed in argument. This means that the caller may see unforseen issues using your function. Make sure not to modify the passed in array. @reverse', function() {
       var clonedArray = _.clone(longArray);
       reverse(longArray)
-      assert.deepEqual(longArray, clonedArray);
+      assert.deepEqual(longArray, clonedArray, 'Your function is modifying the passed in argument. This means that the caller may see unforseen issues using your function. Make sure not to modify the passed in array. @reverse');
     });
 
     it('When called, the array should have the same length as passed in array. @reverse', function() {
