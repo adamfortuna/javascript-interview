@@ -67,7 +67,7 @@ describe('reverse', function() {
     it('The `reverse` function should return the reversed array. @reverse', function() {
       var reverseResult = reverse(longArray),
           correct = [5,4,3,2,1];
-      assert.deepEqual(reverseResult, correct, "We called your reverse function passing in `"+JSON.stringify(longArray)+" and expected to get back `" + JSON.stringify(correct) + "`, but it returned `"+JSON.stringify(reverseResult)+"`.");
+      assert.deepEqual(reverseResult, correct, "We called your reverse function passing in `"+JSON.stringify(longArray)+"` and expected to get back `" + JSON.stringify(correct) + "`, but it returned `"+JSON.stringify(reverseResult)+"`.");
     });
   });
 });
