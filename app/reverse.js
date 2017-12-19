@@ -1,7 +1,12 @@
 module.exports = function(arr) {
-  var reversedArr = [];
-  while(arr.length > 0) {
-    reversedArr.push(arr.pop());
-  }
-  return reversedArr;
+  var i, res;
+ if (arr.length < 2) {
+   return arr;
+ } else {
+   res = [];
+   for (i = arr.length - 1; i >= 0; i--) {
+     res.push(arr[i]);
+   }
+   return res;
+ }
 };
