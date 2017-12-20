@@ -19,7 +19,7 @@ describe('fizzbuzz', function() {
   });
 
   it('Your function should accept 1 argument - the `print` function. @fizzbuzz', function() {
-    assert.equal(fizzbuzz.length, 1, 'Your function should accept 1 argument.');
+    assert.equal(fizzbuzz.length, 1, 'Your function should accept 1 argument - the `print` function.');
   });
 
   describe('execution', function() {
