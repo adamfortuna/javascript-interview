@@ -1,3 +1,3 @@
 module.exports = function(print) {
-  print("adsfas");
+  print("1");
 }
