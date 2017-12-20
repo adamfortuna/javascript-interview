@@ -1,11 +1,13 @@
 module.exports = function(print) {
-  print("1");
-  print("2");
-  print("Fizz");
-  print("4");
-  print("Buzz");
-
-  for(var i=0; i<95; i++) {
-    print(i);
+  for(var i=1; i<=10; i++) {
+    if((i%3 === 0) && (i%5 === 0)) {
+      print("FizzBuzz");
+    } else if(i%5 === 0) {
+      print("Buzz");
+    } else if(i%3 === 0) {
+      print("Fizz");
+    } else {
+      print(i);
+    }
   }
 }
